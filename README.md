@@ -1,11 +1,12 @@
 
 # DEPENDENCIES
-**Hardware Requirements**
+### Hardware Requirements
 1. Windows/Linux host (dedicated or VPS)
 1. Min 600MB RAM*
 1. Min 200MB storage space*
 *Storage and RAM requirements are subjected to increase with increase in users and data on in the application.
-**Software Requirements**
+
+### Software Requirements
 1. NodeJs v8 or higher
 1. MongoDb server running on the host machine or somewhere accessible
 1. NPM or yarn for handling node packages.
