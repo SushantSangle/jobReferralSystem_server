@@ -4,6 +4,7 @@
 1. Windows/Linux host (dedicated or VPS)
 1. Min 600MB RAM*
 1. Min 200MB storage space*
+
 *Storage and RAM requirements are subjected to increase with increase in users and data on in the application.
 
 ### Software Requirements
@@ -25,7 +26,7 @@ Following commands will help you to create required roles and also create one su
 ```
 curl -X POST \
   -H "X-Parse-Application-Id: ${APPLICATION_ID}" \
-  -H "X-Parse-REST-API-Key: ${REST_API_KEY}" \
+  -H "X-Parse-MASTER-Key: ${MASTER_KEY}" \
   -H "X-Parse-Revocable-Session: 1" \
   -H "Content-Type: application/json" \
   -d '{"username":"superDude","password":"p_n7!-e8","phone":"9745656165"}' \
@@ -42,7 +43,7 @@ We will now make the above user the superAdmin and also create a recruiter role 
 ```
 curl -X POST \
   -H "X-Parse-Application-Id: ${APPLICATION_ID}" \
-  -H "X-Parse-REST-API-Key: ${REST_API_KEY}" \
+  -H "X-Parse-MASTER-Key: ${MASTER_KEY}" \
   -H "Content-Type: application/json" \
   -d '{
         "name": "SuperAdmin",
@@ -64,12 +65,12 @@ curl -X POST \
       }' \
   https://YOUR.PARSE-SERVER.HERE/parse/roles
 ```
-The above code will assign the prior created user to the SuperAdmin role, now you can use that user to do any task in the client application, that user will have all the privileges. 
+The above code will assign the prior created user to the SuperAdmin role, now you can use that user to do any task in the client application, that user will have all the privileges.
 Now we create a recruiter role.
 ```
 curl -X POST \
   -H "X-Parse-Application-Id: ${APPLICATION_ID}" \
-  -H "X-Parse-REST-API-Key: ${REST_API_KEY}" \
+  -H "X-Parse-MASTER-Key: ${MASTER_KEY}" \
   -H "Content-Type: application/json" \
   -d '{
         "name": "Recruiter",
@@ -85,7 +86,7 @@ After these roles are created, you are all set to change the url and application
 
 
 ## SUGGESTION
-You can also setup a parse dashboard on the same server as that of the parse-server and it will let you have greater control over your database classes and also manage data more efficiently. Following is the link for how to set up a parse dashboard. 
+You can also setup a parse dashboard on the same server as that of the parse-server and it will let you have greater control over your database classes and also manage data more efficiently. Following is the link for how to set up a parse dashboard.
 [https://github.com/parse-community/parse-dashboard](https://github.com/parse-community/parse-dashboard)
 
 
