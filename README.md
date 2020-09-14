@@ -89,5 +89,5 @@ You can also setup a parse dashboard on the same server as that of the parse-ser
 
 
 ## LISENCE
-[![License](https://img.shields.io/github/license/Swaralihb/Budget-Manager---Web-application)](https://github.com/SushantSangle/jobReferralSystem_server/blob/master/LICENSE)
+[![License](https://github.com/SushantSangle/jobReferralSystem_server)](https://github.com/SushantSangle/jobReferralSystem_server/blob/master/LICENSE)
 
