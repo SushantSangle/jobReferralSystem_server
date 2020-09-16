@@ -20,6 +20,10 @@ Following are the steps for getting the submitted server.tar.gz file up and runn
 1. Type npm install or yarn install to sync all the node modules required for the package.
 1. After the packages are synced and config.js is properly filled you may try typing npm start to test the server in console.
 1. Check whether the provided port is listening for requests by either going to the url/parse if it responds by {"error":"unauthorized"}, congratulations!! Your server is up and running.
+## For use with docker
+1. Make necessary changes in config.js
+1. change the port in Dockerfile `EXPOSE` option
+1. Run ` docker build . -t job_referral_system`
 ## CREATING APPROPRIATE CLASSES
 Following commands will help you to create required roles and also create one super admin user which can then in turn be used in the client application to create other users. The following lines show how to perform this using curl, you can get your platform specific instructions at https://docs.parseplatform.org/rest/guide/
 **STEP 1: Creating a user.**
